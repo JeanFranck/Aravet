@@ -65,7 +65,7 @@
         }
 
         .section-padding {
-            padding: 6rem 0;
+            padding: 3rem 0;
         }
 
         .section-bg {
@@ -156,7 +156,7 @@
             }
 
             .section-padding {
-                padding: 4rem 0;
+                padding: 2rem 0;
             }
         }
     </style>
@@ -195,29 +195,34 @@
                     <div class="card text-center p-4">
                         <h5 class="card-title">Consultas</h5>
                         <p class="card-text">Atención médica general</p>
+                        <button class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#consultasModal">Más información</button>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card text-center p-4">
                         <h5 class="card-title">Vacunación</h5>
                         <p class="card-text">Protección para tu mascota</p>
+                        <button class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#vacunacionModal">Más información</button>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card text-center p-4">
                         <h5 class="card-title">Peluquería</h5>
                         <p class="card-text">Baños y cortes de pelo</p>
+                        <button class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#peluqueriaModal">Más información</button>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card text-center p-4">
                         <h5 class="card-title">Emergencias</h5>
                         <p class="card-text">Atención 24/7</p>
+                        <button class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#emergenciasModal">Más información</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section id="galeria" class="gallery section-padding section-bg">
         <div class="container">
@@ -316,6 +321,91 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Registrarse</button>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="consultasModal" tabindex="-1" aria-labelledby="consultasModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="consultasModalLabel">Consultas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Tipos de consultas realizadas:</h6>
+                    <ul>
+                        <li>Consulta general</li>
+                        <li>Chequeo preventivo</li>
+                        <li>Seguimiento de tratamientos</li>
+                        <li>Consulta de especialidad (dermatología, cardiología, etc.)</li>
+                        <li>Asesoramiento nutricional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vacunacionModal" tabindex="-1" aria-labelledby="vacunacionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vacunacionModalLabel">Vacunación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Tipos de vacunas ofrecidas:</h6>
+                    <ul>
+                        <li>Vacuna polivalente (para perros)</li>
+                        <li>Vacuna contra la rabia</li>
+                        <li>Vacuna triple felina</li>
+                        <li>Vacuna contra la leucemia felina</li>
+                        <li>Vacunas opcionales según necesidades específicas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="peluqueriaModal" tabindex="-1" aria-labelledby="peluqueriaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="peluqueriaModalLabel">Peluquería</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Servicios de peluquería ofrecidos:</h6>
+                    <ul>
+                        <li>Baño y secado</li>
+                        <li>Corte de pelo según raza</li>
+                        <li>Cepillado y deslanado</li>
+                        <li>Corte de uñas</li>
+                        <li>Limpieza de oídos</li>
+                        <li>Tratamientos antiparásitos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="emergenciasModal" tabindex="-1" aria-labelledby="emergenciasModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="emergenciasModalLabel">Emergencias</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Servicios de emergencia disponibles:</h6>
+                    <ul>
+                        <li>Atención de urgencias 24/7</li>
+                        <li>Tratamiento de heridas y lesiones</li>
+                        <li>Manejo de intoxicaciones</li>
+                        <li>Atención de problemas respiratorios</li>
+                        <li>Tratamiento de fracturas y traumatismos</li>
+                        <li>Cuidados intensivos</li>
+                    </ul>
                 </div>
             </div>
         </div>
